@@ -1,0 +1,21 @@
+date:2026-03-03 17:10:34	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:bffa2daf012248c5b5b151eb4f365e21	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.218.177], [RemoteHost:192.168.218.177] 
+date:2026-03-03 17:10:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:bffa2daf012248c5b5b151eb4f365e21	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-03-03 17:10:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:bffa2daf012248c5b5b151eb4f365e21	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-03-03 17:10:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:bffa2daf012248c5b5b151eb4f365e21	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@2627d990[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Tue Mar 03 17:10:39 JST 2026
+    outwardDate=Tue Mar 03 17:10:39 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@56f0e1bd[
+    beginningPeriod=Tue Mar 03 17:10:39 JST 2026
+    endingPeriod=Mon Jun 01 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-03-03 17:10:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:bffa2daf012248c5b5b151eb4f365e21	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 867,300 ns
+date:2026-03-03 17:10:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:bffa2daf012248c5b5b151eb4f365e21	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#01A45C329F9EDEA81EA9E5771F844BB7 sessionCreated : org.apache.catalina.session.StandardSessionFacade@297025cf
+date:2026-03-03 17:10:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:bffa2daf012248c5b5b151eb4f365e21	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#01A45C329F9EDEA81EA9E5771F844BB7 attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-03-03 17:10:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:bffa2daf012248c5b5b151eb4f365e21	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.218.177], [RemoteHost:192.168.218.177] 
+date:2026-03-03 17:41:12	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#01A45C329F9EDEA81EA9E5771F844BB7 sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@297025cf
+date:2026-03-03 17:41:12	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#01A45C329F9EDEA81EA9E5771F844BB7 attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
