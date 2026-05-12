@@ -1,0 +1,828 @@
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.b.BoardingClassRepository.findAll   	message:==>  Preparing: SELECT boarding_class_cd, boarding_class_name, extra_charge FROM boarding_class
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.b.BoardingClassRepository.findAll   	message:==> Parameters: 
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.b.BoardingClassRepository.findAll   	message:<==    Columns: boarding_class_cd, boarding_class_name, extra_charge
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.b.BoardingClassRepository.findAll   	message:<==        Row: N, 一般席, 0
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.b.BoardingClassRepository.findAll   	message:<==        Row: S, 特別席, 5000
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.b.BoardingClassRepository.findAll   	message:<==      Total: 2
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:==>  Preparing: SELECT fare_type_cd, fare_type_name, discount_rate, rsrv_available_start_day_num, rsrv_available_end_day_num, passenger_min_num FROM fare_type
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:==> Parameters: 
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:<==    Columns: fare_type_cd, fare_type_name, discount_rate, rsrv_available_start_day_num, rsrv_available_end_day_num, passenger_min_num
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:<==        Row: OW, 片道運賃, 0, 90, 0, 1
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:<==        Row: RT, 往復運賃, 5, 90, 0, 1
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:<==        Row: RD1, 予約割1, 10, 60, 1, 1
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:<==        Row: RD7, 予約割7, 20, 60, 7, 1
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:<==        Row: ED, 早期割, 30, 60, 30, 1
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:<==        Row: LD, レディース割, 30, 60, 1, 1
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:<==        Row: GD, グループ割, 30, 60, 1, 3
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:<==        Row: SOW, 特別片道運賃, 0, 90, 0, 1
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:<==        Row: SRT, 特別往復運賃, 5, 90, 0, 1
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:<==        Row: SRD, 特別予約割, 10, 60, 1, 1
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.faretype.FareTypeRepository.findAll 	message:<==      Total: 10
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:==>  Preparing: SELECT fm.flight_name, fm.departure_time, fm.arrival_time, fm.craft_type, r.route_no, r.basic_fare, a_dep.airport_cd AS dep_airport_cd, a_dep.airport_name AS dep_airport_name, a_arr.airport_cd AS aar_airport_cd, a_arr.airport_name AS aar_airport_name FROM flight_master fm, route r, airport a_dep, airport a_arr WHERE fm.route_no = r.route_no AND r.dep_airport_cd = a_dep.airport_cd AND r.arr_airport_cd = a_arr.airport_cd
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:==> Parameters: 
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==    Columns: flight_name, departure_time, arrival_time, craft_type, route_no, basic_fare, dep_airport_cd, dep_airport_name, aar_airport_cd, aar_airport_name
+date:2026-02-27 13:09:44	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT001, 0900, 1000, 101, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT031, 0945, 1045, 151, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT061, 1030, 1130, 201, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT091, 1115, 1215, 251, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT121, 1200, 1300, 301, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT151, 1245, 1345, 351, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT181, 1330, 1430, 401, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT211, 1415, 1515, 451, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT241, 1500, 1600, 501, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT271, 1545, 1645, 551, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT301, 1630, 1730, 601, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT331, 1715, 1815, 651, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT361, 1800, 1900, 701, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT391, 1845, 1945, 751, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT421, 1930, 2030, 801, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT451, 2015, 2115, 851, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT481, 2100, 2200, 901, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT511, 2145, 2245, 951, 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT006, 0900, 1050, 106, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT036, 0945, 1135, 156, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT066, 1030, 1220, 206, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT096, 1115, 1305, 256, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT126, 1200, 1350, 306, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT156, 1245, 1435, 356, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT186, 1330, 1520, 406, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT216, 1415, 1605, 456, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT246, 1500, 1650, 506, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT276, 1545, 1735, 556, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT306, 1630, 1820, 606, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT336, 1715, 1905, 656, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT366, 1800, 1950, 706, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT396, 1845, 2035, 756, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT426, 1930, 2120, 806, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT456, 2015, 2205, 856, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT486, 2100, 2250, 906, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT516, 2145, 2335, 956, 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT013, 0900, 1130, 113, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT043, 0945, 1215, 163, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT073, 1030, 1300, 213, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT103, 1115, 1345, 263, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT133, 1200, 1430, 313, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT163, 1245, 1515, 363, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT193, 1330, 1600, 413, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT223, 1415, 1645, 463, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT253, 1500, 1730, 513, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT283, 1545, 1815, 563, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT313, 1630, 1900, 613, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT343, 1715, 1945, 663, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT373, 1800, 2030, 713, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT403, 1845, 2115, 763, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT433, 1930, 2145, 813, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT463, 2015, 2245, 863, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT493, 2100, 2330, 913, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT523, 2145, 2415, 963, 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT016, 0900, 1010, 116, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT046, 0945, 1055, 166, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT076, 1030, 1140, 216, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT106, 1115, 1225, 266, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT136, 1200, 1310, 316, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT166, 1245, 1355, 366, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT196, 1330, 1440, 416, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT226, 1415, 1525, 466, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT256, 1500, 1610, 516, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT286, 1545, 1655, 566, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT316, 1630, 1740, 616, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT346, 1715, 1825, 666, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT376, 1800, 1910, 716, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT406, 1845, 1955, 766, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT436, 1930, 2040, 816, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT466, 2015, 2125, 866, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT496, 2100, 2210, 916, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT526, 2145, 2255, 966, 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT018, 0910, 1130, 118, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT048, 0955, 1215, 168, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT078, 1040, 1300, 218, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT108, 1125, 1345, 268, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT138, 1210, 1430, 318, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT168, 1255, 1515, 368, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT198, 1340, 1600, 418, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT228, 1425, 1645, 468, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT258, 1510, 1730, 518, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT288, 1555, 1815, 568, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT318, 1640, 1900, 618, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT348, 1725, 1945, 668, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT378, 1810, 2030, 718, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT408, 1855, 2115, 768, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT438, 1940, 2145, 818, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT468, 2025, 2245, 868, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT498, 2110, 2330, 918, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT528, 2155, 2415, 968, 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT019, 0900, 1005, 119, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT049, 0945, 1050, 169, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT079, 1030, 1135, 219, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT109, 1115, 1220, 269, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT139, 1200, 1305, 319, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT169, 1245, 1350, 369, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT199, 1330, 1435, 419, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT229, 1415, 1520, 469, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT259, 1500, 1605, 519, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT289, 1545, 1650, 569, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT319, 1630, 1745, 619, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT349, 1715, 1820, 669, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT379, 1800, 1905, 719, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT409, 1845, 1950, 769, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT439, 1930, 2035, 819, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT469, 2015, 2120, 869, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT499, 2100, 2205, 919, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT529, 2145, 2250, 969, 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT021, 0900, 1050, 121, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT051, 0945, 1135, 171, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT081, 1030, 1220, 221, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT111, 1115, 1305, 271, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT141, 1200, 1350, 321, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT171, 1245, 1435, 371, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT201, 1330, 1520, 421, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT231, 1415, 1605, 471, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT261, 1500, 1650, 521, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT291, 1545, 1735, 571, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT321, 1630, 1820, 621, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT351, 1715, 1905, 671, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT381, 1800, 1950, 721, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT411, 1845, 2035, 771, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT441, 1930, 2120, 821, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT471, 2015, 2205, 871, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT501, 2100, 2250, 921, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==        Row: NTT531, 2145, 2335, 971, 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.f.F.findAllFlightMaster             	message:<==      Total: 126
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:==>  Preparing: SELECT peak_time_cd, peak_start_date, peak_end_date, multiplication_ratio FROM peak_time
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:==> Parameters: 
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==    Columns: peak_time_cd, peak_start_date, peak_end_date, multiplication_ratio
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK1, 2026-01-01, 2026-01-05, 140
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK1, 2026-03-20, 2026-03-31, 140
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK1, 2026-08-08, 2026-08-18, 140
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK1, 2026-12-26, 2026-12-31, 140
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK2, 2026-07-18, 2026-08-07, 125
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK2, 2026-08-19, 2026-08-31, 125
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK2, 2026-12-19, 2026-12-25, 125
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK2, 2026-03-13, 2026-03-19, 125
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK1, 2027-01-01, 2027-01-05, 140
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK1, 2027-03-20, 2027-03-31, 140
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK1, 2027-08-08, 2027-08-18, 140
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK1, 2027-12-26, 2027-12-31, 140
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK2, 2027-07-18, 2027-08-07, 125
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK2, 2027-08-19, 2027-08-31, 125
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK2, 2027-12-19, 2027-12-25, 125
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==        Row: PEAK2, 2027-03-13, 2027-03-19, 125
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.peaktime.PeakTimeRepository.findAll 	message:<==      Total: 16
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:==>  Preparing: SELECT r.route_no, r.basic_fare, a_dep.airport_cd AS dep_airport_cd, a_dep.airport_name AS dep_airport_name, a_arr.airport_cd AS aar_airport_cd, a_arr.airport_name AS aar_airport_name FROM route r, airport a_dep, airport a_arr WHERE r.dep_airport_cd = a_dep.airport_cd AND r.arr_airport_cd = a_arr.airport_cd
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:==> Parameters: 
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==    Columns: route_no, basic_fare, dep_airport_cd, dep_airport_name, aar_airport_cd, aar_airport_name
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 1, 20600, HND, 東京(羽田), ITM, 大阪(伊丹)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 2, 30700, HND, 東京(羽田), MBE, オホーツク紋別
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 3, 33700, FUK, 福岡, NRT, 東京(成田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 4, 37400, ISG, 石垣, OIM, 大島
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 5, 37900, KIX, 大阪(関西), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 6, 20100, UKB, 大阪(神戸), HSG, 佐賀
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 7, 31400, ITM, 大阪(伊丹), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 8, 34200, NGO, 名古屋(中部), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 9, 52400, OKD, 札幌(丘珠), KOJ, 鹿児島
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 10, 46400, ISG, 石垣, FUK, 福岡
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 11, 30700, HND, 東京(羽田), SPK, 札幌(千歳)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 12, 37400, HND, 東京(羽田), OKA, 沖縄
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 13, 20600, HND, 東京(羽田), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 14, 33700, HND, 東京(羽田), FUK, 福岡
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 15, 20600, ITM, 大阪(伊丹), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 16, 30700, SPK, 札幌(千歳), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 17, 37400, OKA, 沖縄, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 18, 20600, KIX, 大阪(関西), HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 19, 33700, FUK, 福岡, HND, 東京(羽田)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:TRACE	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==        Row: 20, 37900, SPK, 札幌(千歳), KIX, 大阪(関西)
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.d.r.route.RouteRepository.findAll       	message:<==      Total: 20
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:WARN 	logger:org.apache.activemq.broker.BrokerService        	message:Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 910 mb - resetting to 70% of maximum available: 637
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:j.c.n.a.domain.common.codelist.AirportCodeList  	message:refresh codelist codeListId=CL_AIRPORT
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:org.springframework.jdbc.core.JdbcTemplate      	message:Executing SQL query [SELECT airport_cd,airport_name,display_order FROM airport order by display_order ASC]
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:org.terasoluna.gfw.common.codelist.JdbcCodeList 	message:refresh codelist codeListId=CL_BOARDINGCLASS
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:org.springframework.jdbc.core.JdbcTemplate      	message:Executing SQL query [SELECT boarding_class_cd,boarding_class_name FROM boarding_class ORDER BY display_order ASC]
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:org.terasoluna.gfw.common.codelist.JdbcCodeList 	message:refresh codelist codeListId=CL_FARETYPE
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:org.springframework.jdbc.core.JdbcTemplate      	message:Executing SQL query [SELECT fare_type_cd, fare_type_name FROM fare_type ORDER BY display_order ASC]
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:org.terasoluna.gfw.common.codelist.JdbcCodeList 	message:refresh codelist codeListId=CL_CREDITTYPE
+date:2026-02-27 13:09:45	thread:main	user:	X-Track:	level:DEBUG	logger:org.springframework.jdbc.core.JdbcTemplate      	message:Executing SQL query [SELECT credit_type_cd, credit_firm FROM credit_type ORDER BY display_order ASC]
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:DEBUG	logger:o.terasoluna.gfw.web.logging.mdc.MDCClearFilter 	message:Filter 'MDCClearFilter' configured for use
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:DEBUG	logger:o.t.gfw.web.logging.mdc.XTrackMDCPutFilter      	message:Filter 'XTrackMDCPutFilter' configured for use
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:Initializing Servlet 'appServlet'
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:DEBUG	logger:o.t.gfw.web.codelist.CodeListInterceptor        	message:registered codeList : [CL_CREDITMONTH, CL_FLIGHTTYPE, CL_BOARDINGCLASS, CL_CREDITYEAR, CL_CREDITTYPE, CL_FARETYPE, CL_AIRPORT, CL_GENDER]
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	j.c.n.a.a.a.AuthApiController:
+  	{GET [/api/auth/status]}: getStatus(AtrsUserDetails)
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	j.c.n.a.a.a.IndexController:
+  	{GET [/]}: homePage()
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	j.c.n.a.a.a.MemberApiController:
+  	{GET [/api/member/available]}: getAvailable(String)
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	j.c.n.a.a.a.AuthLoginController:
+  	{[GET, POST] [/auth/login]}: loginForm()
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	j.c.n.a.a.b.FlightsApiController:
+  	{GET [/api/flights]}: getFlights(FlightSearchCriteriaForm)
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	j.c.n.a.a.b.TicketSearchController:
+  	{GET [/ticket/search], params [topForm]}: searchTopForm(Model)
+  	{GET [/ticket/search], params [form]}: searchForm(Model)
+  	{GET [/ticket/search], params [flightForm]}: searchFlightForm(TicketSearchForm,BindingResult,Model)
+  	{GET [/ticket/search], params [redo]}: searchRedo(TicketSearchForm,ReservationFlightForm,Model)
+  	{POST [/ticket/search]}: searchSelect(TicketSearchForm,ReservationFlightForm,BindingResult,Model,RedirectAttributes)
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	j.c.n.a.a.b.TicketReserveController:
+  	{GET [/ticket/reserve], params [fail]}: reserveFail()
+  	{POST [/ticket/reserve]}: reserve(TicketReserveForm,BindingResult,Model,RedirectAttributes)
+  	{POST [/ticket/reserve], params [confirm]}: reserveConfirm(TicketReserveForm,BindingResult,Model)
+  	{GET [/ticket/reserve], params [form]}: reserveForm(ReservationFlightForm,AtrsUserDetails,Model)
+  	{POST [/ticket/reserve], params [redo]}: reserveRedo(TicketReserveForm,Model)
+  	{GET [/ticket/reserve], params [complete]}: reserveComplete()
+  	{POST [/ticket/reserve], params [backToSearch]}: reserveBackToSearch(ReservationFlightForm,Model,RedirectAttributes)
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	j.c.n.a.a.c.MemberRegisterController:
+  	{POST [/member/register]}: register(MemberRegisterForm,BindingResult,Model,RedirectAttributes)
+  	{GET [/member/register], params [complete]}: registerComplete()
+  	{GET [/member/register], params [form]}: registerForm(Model)
+  	{POST [/member/register], params [redo]}: registerRedo(MemberRegisterForm,Model)
+  	{POST [/member/register], params [confirm]}: registerConfirm(MemberRegisterForm,BindingResult,Model)
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	j.c.n.a.a.c.MemberUpdateController:
+  	{POST [/member/update]}: update(MemberUpdateForm,BindingResult,Model,RedirectAttributes,Principal)
+  	{GET [/member/update], params [form]}: updateForm(Model,Principal)
+  	{GET [/member/update], params [complete]}: updateComplete(Model,Principal)
+  	{POST [/member/update], params [redo]}: updateRedo(MemberUpdateForm,Model)
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	j.c.n.a.a.d.ReservationHistoryReportController:
+  	{POST [/HistoryReport/create]}: create(AtrsUserDetails)
+  	{GET [/HistoryReport/create], params [form]}: createReportForm()
+  	{GET [/HistoryReport/download], params [reportList]}: dispReportList(AtrsUserDetails,Model)
+  	{GET [/HistoryReport/create], params [accepted]}: accepted()
+  	{GET [/HistoryReport/download]}: download(AtrsUserDetails,String,Model)
+date:2026-02-27 13:09:47	thread:main	user:	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:31 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+date:2026-02-27 13:09:49	thread:main	user:	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:Completed initialization in 1812 ms
+date:2026-02-27 13:09:49	thread:main	user:	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:Initializing Servlet 'restApiServlet'
+date:2026-02-27 13:09:49	thread:main	user:	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	j.c.n.a.a.c.e.ApiErrorPageController:
+  	{GET [/error]}: handleErrorPage(WebRequest)
+date:2026-02-27 13:09:49	thread:main	user:	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	j.c.n.a.a.f.FlightRestController:
+  	{GET [/flight]}: getFlights(FlightSearchQuery)
+date:2026-02-27 13:09:49	thread:main	user:	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+  	j.c.n.a.a.t.TicketRestController:
+  	{POST [/ticket]}: postTicket(TicketReserveResource)
+date:2026-02-27 13:09:49	thread:main	user:	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+date:2026-02-27 13:09:49	thread:main	user:	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:Completed initialization in 109 ms
+date:2026-02-27 13:09:56	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:1c7091f0380a4d34a9b0b2081a2b94d3	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://localhost:8083/atrs/], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:09:56	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:1c7091f0380a4d34a9b0b2081a2b94d3	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.a0.IndexController#homePage()
+date:2026-02-27 13:09:56	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:1c7091f0380a4d34a9b0b2081a2b94d3	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] IndexController.homePage()
+date:2026-02-27 13:09:56	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:1c7091f0380a4d34a9b0b2081a2b94d3	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] IndexController.homePage()-> view=redirect:/ticket/search?topForm, model={}
+date:2026-02-27 13:09:56	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:1c7091f0380a4d34a9b0b2081a2b94d3	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] IndexController.homePage()-> 27,635,500 ns
+date:2026-02-27 13:09:56	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:1c7091f0380a4d34a9b0b2081a2b94d3	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://localhost:8083/atrs/], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:09:56	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:327b9871b57640b0b0f00801b4672be7	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:09:56	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:327b9871b57640b0b0f00801b4672be7	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:09:56	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:327b9871b57640b0b0f00801b4672be7	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:09:56	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:327b9871b57640b0b0f00801b4672be7	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@5ec3c757[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:09:56 JST 2026
+    outwardDate=Fri Feb 27 13:09:56 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@4ba25a8[
+    beginningPeriod=Fri Feb 27 13:09:56 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:09:56	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:327b9871b57640b0b0f00801b4672be7	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 74,091,400 ns
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:327b9871b57640b0b0f00801b4672be7	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#81688893C12D7895FEC693E282575229 sessionCreated : org.apache.catalina.session.StandardSessionFacade@2c701b27
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:327b9871b57640b0b0f00801b4672be7	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#81688893C12D7895FEC693E282575229 attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:327b9871b57640b0b0f00801b4672be7	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:18f7c91c461b42aab08ed6525b6b9439	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://localhost:8083/atrs/], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:18f7c91c461b42aab08ed6525b6b9439	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.a0.IndexController#homePage()
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:18f7c91c461b42aab08ed6525b6b9439	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] IndexController.homePage()
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:18f7c91c461b42aab08ed6525b6b9439	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] IndexController.homePage()-> view=redirect:/ticket/search?topForm, model={}
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:18f7c91c461b42aab08ed6525b6b9439	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] IndexController.homePage()-> 239,400 ns
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:18f7c91c461b42aab08ed6525b6b9439	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://localhost:8083/atrs/], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:c249546f0fe2471a986970df7f1511c1	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:c249546f0fe2471a986970df7f1511c1	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:c249546f0fe2471a986970df7f1511c1	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:c249546f0fe2471a986970df7f1511c1	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@bb1932a[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:09:57 JST 2026
+    outwardDate=Fri Feb 27 13:09:57 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@5766c2c[
+    beginningPeriod=Fri Feb 27 13:09:57 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:c249546f0fe2471a986970df7f1511c1	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 596,200 ns
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:c249546f0fe2471a986970df7f1511c1	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#1F44B6D6A52F1F5305CC899C9F902FF8 sessionCreated : org.apache.catalina.session.StandardSessionFacade@149f85a
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:c249546f0fe2471a986970df7f1511c1	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#1F44B6D6A52F1F5305CC899C9F902FF8 attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:09:57	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:c249546f0fe2471a986970df7f1511c1	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:09:59	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:ddf63590a4ea4e1593db4a89c48d9ee0	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [SessionID:1F44B6D6A52F1F5305CC899C9F902FF8], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:09:59	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:ddf63590a4ea4e1593db4a89c48d9ee0	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:09:59	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:ddf63590a4ea4e1593db4a89c48d9ee0	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:09:59	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:ddf63590a4ea4e1593db4a89c48d9ee0	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@7f7d83da[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:09:59 JST 2026
+    outwardDate=Fri Feb 27 13:09:59 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@b34d284[
+    beginningPeriod=Fri Feb 27 13:09:59 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:09:59	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:ddf63590a4ea4e1593db4a89c48d9ee0	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 434,000 ns
+date:2026-02-27 13:09:59	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:ddf63590a4ea4e1593db4a89c48d9ee0	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [SessionID:1F44B6D6A52F1F5305CC899C9F902FF8], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:10:00	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:fca4c2c801ae4bf1bb682f26250ccccc	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [SessionID:1F44B6D6A52F1F5305CC899C9F902FF8], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:10:00	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:fca4c2c801ae4bf1bb682f26250ccccc	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:10:00	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:fca4c2c801ae4bf1bb682f26250ccccc	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:10:00	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:fca4c2c801ae4bf1bb682f26250ccccc	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@10988db7[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:10:00 JST 2026
+    outwardDate=Fri Feb 27 13:10:00 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@559a11c0[
+    beginningPeriod=Fri Feb 27 13:10:00 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:10:00	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:fca4c2c801ae4bf1bb682f26250ccccc	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 756,400 ns
+date:2026-02-27 13:10:00	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:fca4c2c801ae4bf1bb682f26250ccccc	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [SessionID:1F44B6D6A52F1F5305CC899C9F902FF8], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:10:02	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:fa0b99d4b49744dcba9937b0fa828a98	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [SessionID:1F44B6D6A52F1F5305CC899C9F902FF8], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:10:02	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:fa0b99d4b49744dcba9937b0fa828a98	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:10:02	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:fa0b99d4b49744dcba9937b0fa828a98	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:10:02	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:fa0b99d4b49744dcba9937b0fa828a98	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@3acc71d4[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:10:02 JST 2026
+    outwardDate=Fri Feb 27 13:10:02 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@340b98fd[
+    beginningPeriod=Fri Feb 27 13:10:02 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:10:02	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:fa0b99d4b49744dcba9937b0fa828a98	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 411,700 ns
+date:2026-02-27 13:10:02	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:fa0b99d4b49744dcba9937b0fa828a98	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [SessionID:1F44B6D6A52F1F5305CC899C9F902FF8], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:11:07	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:40c9f57f488449fe8ac0a5d6d9db40ce	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:11:07	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:40c9f57f488449fe8ac0a5d6d9db40ce	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:11:07	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:40c9f57f488449fe8ac0a5d6d9db40ce	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:11:07	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:40c9f57f488449fe8ac0a5d6d9db40ce	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@7139406e[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:11:07 JST 2026
+    outwardDate=Fri Feb 27 13:11:07 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@17571df9[
+    beginningPeriod=Fri Feb 27 13:11:07 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:11:07	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:40c9f57f488449fe8ac0a5d6d9db40ce	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 380,200 ns
+date:2026-02-27 13:11:07	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:40c9f57f488449fe8ac0a5d6d9db40ce	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#FEA516C3F2E0F2A120E3A2CD66801F54 sessionCreated : org.apache.catalina.session.StandardSessionFacade@5ad4b4fa
+date:2026-02-27 13:11:07	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:40c9f57f488449fe8ac0a5d6d9db40ce	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#FEA516C3F2E0F2A120E3A2CD66801F54 attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:11:07	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:40c9f57f488449fe8ac0a5d6d9db40ce	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:28:33	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:edb769e631a84c4c886e9d94f4144559	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:28:33	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:edb769e631a84c4c886e9d94f4144559	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:28:33	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:edb769e631a84c4c886e9d94f4144559	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:28:33	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:edb769e631a84c4c886e9d94f4144559	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@1a186f24[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:28:33 JST 2026
+    outwardDate=Fri Feb 27 13:28:33 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@1189d60[
+    beginningPeriod=Fri Feb 27 13:28:33 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:28:33	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:edb769e631a84c4c886e9d94f4144559	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 2,673,600 ns
+date:2026-02-27 13:28:33	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:edb769e631a84c4c886e9d94f4144559	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#6202D423C78B7D4C3D8B5067BF61915F sessionCreated : org.apache.catalina.session.StandardSessionFacade@750c3829
+date:2026-02-27 13:28:33	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:edb769e631a84c4c886e9d94f4144559	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#6202D423C78B7D4C3D8B5067BF61915F attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:28:33	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:edb769e631a84c4c886e9d94f4144559	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:30:05	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:dd6d7326800c469c85e933ed67e85a73	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:30:05	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:dd6d7326800c469c85e933ed67e85a73	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:30:05	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:dd6d7326800c469c85e933ed67e85a73	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:30:05	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:dd6d7326800c469c85e933ed67e85a73	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@434cff8e[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:30:05 JST 2026
+    outwardDate=Fri Feb 27 13:30:05 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@1ae1dd12[
+    beginningPeriod=Fri Feb 27 13:30:05 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:30:05	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:dd6d7326800c469c85e933ed67e85a73	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 626,900 ns
+date:2026-02-27 13:30:05	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:dd6d7326800c469c85e933ed67e85a73	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#B9244B1AFBF4E3CB9F41021EA2C43621 sessionCreated : org.apache.catalina.session.StandardSessionFacade@3fde4247
+date:2026-02-27 13:30:05	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:dd6d7326800c469c85e933ed67e85a73	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#B9244B1AFBF4E3CB9F41021EA2C43621 attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:30:05	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:dd6d7326800c469c85e933ed67e85a73	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://localhost:8083/atrs/ticket/search?topForm], [RemoteAddress:0:0:0:0:0:0:0:1], [RemoteHost:0:0:0:0:0:0:0:1] 
+date:2026-02-27 13:34:11	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:9f0094d1c5dc48e192be5b2514210ce6	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.218.18], [RemoteHost:192.168.218.18] 
+date:2026-02-27 13:34:11	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:9f0094d1c5dc48e192be5b2514210ce6	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:34:11	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:9f0094d1c5dc48e192be5b2514210ce6	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:34:11	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:9f0094d1c5dc48e192be5b2514210ce6	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@a894590[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:34:11 JST 2026
+    outwardDate=Fri Feb 27 13:34:11 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@549a3f58[
+    beginningPeriod=Fri Feb 27 13:34:11 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:34:11	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:9f0094d1c5dc48e192be5b2514210ce6	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 1,170,100 ns
+date:2026-02-27 13:34:11	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:9f0094d1c5dc48e192be5b2514210ce6	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#82E7082BAC230C1CCB7D03ACAF103555 sessionCreated : org.apache.catalina.session.StandardSessionFacade@7bee831b
+date:2026-02-27 13:34:11	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:9f0094d1c5dc48e192be5b2514210ce6	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#82E7082BAC230C1CCB7D03ACAF103555 attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:34:11	thread:http-nio-8083-exec-3	user:anonymousUser	X-Track:9f0094d1c5dc48e192be5b2514210ce6	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.218.18], [RemoteHost:192.168.218.18] 
+date:2026-02-27 13:34:18	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:bb49c3e294344a749f7f15b2ba7b487b	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [SessionID:82E7082BAC230C1CCB7D03ACAF103555], [RemoteAddress:192.168.218.18], [RemoteHost:192.168.218.18] 
+date:2026-02-27 13:34:18	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:bb49c3e294344a749f7f15b2ba7b487b	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:34:18	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:bb49c3e294344a749f7f15b2ba7b487b	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:34:18	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:bb49c3e294344a749f7f15b2ba7b487b	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@8692f9f[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:34:18 JST 2026
+    outwardDate=Fri Feb 27 13:34:18 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@259f7ef3[
+    beginningPeriod=Fri Feb 27 13:34:18 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:34:18	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:bb49c3e294344a749f7f15b2ba7b487b	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 626,600 ns
+date:2026-02-27 13:34:18	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:bb49c3e294344a749f7f15b2ba7b487b	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [SessionID:82E7082BAC230C1CCB7D03ACAF103555], [RemoteAddress:192.168.218.18], [RemoteHost:192.168.218.18] 
+date:2026-02-27 13:34:58	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:aaa7890cc4b84f758b2c2dd94544adc7	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.218.18], [RemoteHost:192.168.218.18] 
+date:2026-02-27 13:34:58	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:aaa7890cc4b84f758b2c2dd94544adc7	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:34:58	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:aaa7890cc4b84f758b2c2dd94544adc7	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:34:58	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:aaa7890cc4b84f758b2c2dd94544adc7	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@4954c8b5[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:34:58 JST 2026
+    outwardDate=Fri Feb 27 13:34:58 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@3cf5cf53[
+    beginningPeriod=Fri Feb 27 13:34:58 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:34:58	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:aaa7890cc4b84f758b2c2dd94544adc7	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 1,064,000 ns
+date:2026-02-27 13:34:58	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:aaa7890cc4b84f758b2c2dd94544adc7	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#FAB3808ABA1C2C70D542EF015BCB9D3D sessionCreated : org.apache.catalina.session.StandardSessionFacade@52ab9255
+date:2026-02-27 13:34:58	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:aaa7890cc4b84f758b2c2dd94544adc7	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#FAB3808ABA1C2C70D542EF015BCB9D3D attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:34:58	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:aaa7890cc4b84f758b2c2dd94544adc7	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.218.18], [RemoteHost:192.168.218.18] 
+date:2026-02-27 13:35:00	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6fb355bd702740649d5e4c74bf4da880	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?form], [SessionID:FAB3808ABA1C2C70D542EF015BCB9D3D], [RemoteAddress:192.168.218.18], [RemoteHost:192.168.218.18] 
+date:2026-02-27 13:35:00	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6fb355bd702740649d5e4c74bf4da880	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchForm(Model)
+date:2026-02-27 13:35:00	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6fb355bd702740649d5e4c74bf4da880	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchForm(Model)
+date:2026-02-27 13:35:00	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6fb355bd702740649d5e4c74bf4da880	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchForm(Model)-> view=B1/flightSearch, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@2a6728c9[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:35:00 JST 2026
+    outwardDate=Fri Feb 27 13:35:00 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@7bbc5e8d[
+    beginningPeriod=Fri Feb 27 13:35:00 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], isInitialSearchUnnecessary=true, org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:35:00	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6fb355bd702740649d5e4c74bf4da880	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchForm(Model)-> 1,303,600 ns
+date:2026-02-27 13:35:01	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6fb355bd702740649d5e4c74bf4da880	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#FAB3808ABA1C2C70D542EF015BCB9D3D attributeAdded : org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@1f1d678e
+date:2026-02-27 13:35:01	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6fb355bd702740649d5e4c74bf4da880	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?form], [SessionID:FAB3808ABA1C2C70D542EF015BCB9D3D], [RemoteAddress:192.168.218.18], [RemoteHost:192.168.218.18] 
+date:2026-02-27 13:35:44	thread:http-nio-8083-exec-8	user:anonymousUser	X-Track:c469c3039ca9439499cb125266101f43	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.214.89], [RemoteHost:192.168.214.89] 
+date:2026-02-27 13:35:44	thread:http-nio-8083-exec-8	user:anonymousUser	X-Track:c469c3039ca9439499cb125266101f43	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:35:44	thread:http-nio-8083-exec-8	user:anonymousUser	X-Track:c469c3039ca9439499cb125266101f43	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:35:44	thread:http-nio-8083-exec-8	user:anonymousUser	X-Track:c469c3039ca9439499cb125266101f43	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@55d54898[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:35:44 JST 2026
+    outwardDate=Fri Feb 27 13:35:44 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@39f45932[
+    beginningPeriod=Fri Feb 27 13:35:44 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:35:44	thread:http-nio-8083-exec-8	user:anonymousUser	X-Track:c469c3039ca9439499cb125266101f43	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 1,081,600 ns
+date:2026-02-27 13:35:44	thread:http-nio-8083-exec-8	user:anonymousUser	X-Track:c469c3039ca9439499cb125266101f43	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#9B6CC59A209ADA3FC0BD36E477D2732F sessionCreated : org.apache.catalina.session.StandardSessionFacade@1181fa3e
+date:2026-02-27 13:35:44	thread:http-nio-8083-exec-8	user:anonymousUser	X-Track:c469c3039ca9439499cb125266101f43	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#9B6CC59A209ADA3FC0BD36E477D2732F attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:35:44	thread:http-nio-8083-exec-8	user:anonymousUser	X-Track:c469c3039ca9439499cb125266101f43	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.214.89], [RemoteHost:192.168.214.89] 
+date:2026-02-27 13:36:00	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:78442d45a1dc4c51bb258d5660f44891	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/auth/login?form], [SessionID:9B6CC59A209ADA3FC0BD36E477D2732F], [RemoteAddress:192.168.214.89], [RemoteHost:192.168.214.89] 
+date:2026-02-27 13:36:00	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:78442d45a1dc4c51bb258d5660f44891	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.a1.AuthLoginController#loginForm()
+date:2026-02-27 13:36:00	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:78442d45a1dc4c51bb258d5660f44891	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] AuthLoginController.loginForm()
+date:2026-02-27 13:36:00	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:78442d45a1dc4c51bb258d5660f44891	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] AuthLoginController.loginForm()-> view=A1/loginForm, model={}
+date:2026-02-27 13:36:00	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:78442d45a1dc4c51bb258d5660f44891	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] AuthLoginController.loginForm()-> 569,300 ns
+date:2026-02-27 13:36:00	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:78442d45a1dc4c51bb258d5660f44891	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#9B6CC59A209ADA3FC0BD36E477D2732F attributeAdded : org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@3761a4b
+date:2026-02-27 13:36:00	thread:http-nio-8083-exec-5	user:anonymousUser	X-Track:78442d45a1dc4c51bb258d5660f44891	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/auth/login?form], [SessionID:9B6CC59A209ADA3FC0BD36E477D2732F], [RemoteAddress:192.168.214.89], [RemoteHost:192.168.214.89] 
+date:2026-02-27 13:36:04	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:767464c6e4044f1e9e836315e59c7ecd	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/], [SessionID:9B6CC59A209ADA3FC0BD36E477D2732F], [RemoteAddress:192.168.214.89], [RemoteHost:192.168.214.89] 
+date:2026-02-27 13:36:04	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:767464c6e4044f1e9e836315e59c7ecd	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.a0.IndexController#homePage()
+date:2026-02-27 13:36:04	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:767464c6e4044f1e9e836315e59c7ecd	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] IndexController.homePage()
+date:2026-02-27 13:36:04	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:767464c6e4044f1e9e836315e59c7ecd	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] IndexController.homePage()-> view=redirect:/ticket/search?topForm, model={}
+date:2026-02-27 13:36:04	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:767464c6e4044f1e9e836315e59c7ecd	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] IndexController.homePage()-> 141,500 ns
+date:2026-02-27 13:36:04	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:767464c6e4044f1e9e836315e59c7ecd	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/], [SessionID:9B6CC59A209ADA3FC0BD36E477D2732F], [RemoteAddress:192.168.214.89], [RemoteHost:192.168.214.89] 
+date:2026-02-27 13:36:04	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:f205dcf9788341f188f629002ae0d701	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [SessionID:9B6CC59A209ADA3FC0BD36E477D2732F], [RemoteAddress:192.168.214.89], [RemoteHost:192.168.214.89] 
+date:2026-02-27 13:36:04	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:f205dcf9788341f188f629002ae0d701	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:36:04	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:f205dcf9788341f188f629002ae0d701	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:36:04	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:f205dcf9788341f188f629002ae0d701	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@21e6a149[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:36:04 JST 2026
+    outwardDate=Fri Feb 27 13:36:04 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@ea2197e[
+    beginningPeriod=Fri Feb 27 13:36:04 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:36:04	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:f205dcf9788341f188f629002ae0d701	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 633,500 ns
+date:2026-02-27 13:36:04	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:f205dcf9788341f188f629002ae0d701	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [SessionID:9B6CC59A209ADA3FC0BD36E477D2732F], [RemoteAddress:192.168.214.89], [RemoteHost:192.168.214.89] 
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:997a918d2c51474db0b1a15f824311f5	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?flightType=OW&depAirportCd=HND&arrAirportCd=OKA&outwardDate=2026%2F02%2F27&homewardDate=2026%2F02%2F27&boardingClassCd=N&flightForm=%E7%85%A7%E4%BC%9A], [SessionID:9B6CC59A209ADA3FC0BD36E477D2732F], [RemoteAddress:192.168.214.89], [RemoteHost:192.168.214.89] 
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:997a918d2c51474db0b1a15f824311f5	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchFlightForm(TicketSearchForm, BindingResult, Model)
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:997a918d2c51474db0b1a15f824311f5	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchFlightForm(TicketSearchForm,BindingResult,Model)
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:997a918d2c51474db0b1a15f824311f5	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchFlightForm(TicketSearchForm,BindingResult,Model)-> view=B1/flightSearch, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@1b5da001[
+    arrAirportCd=OKA
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 00:00:00 JST 2026
+    outwardDate=Fri Feb 27 00:00:00 JST 2026
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@3f5f5348[
+    beginningPeriod=Fri Feb 27 13:36:11 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:997a918d2c51474db0b1a15f824311f5	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchFlightForm(TicketSearchForm,BindingResult,Model)-> 140,209,100 ns
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:997a918d2c51474db0b1a15f824311f5	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?flightType=OW&depAirportCd=HND&arrAirportCd=OKA&outwardDate=2026%2F02%2F27&homewardDate=2026%2F02%2F27&boardingClassCd=N&flightForm=%E7%85%A7%E4%BC%9A], [SessionID:9B6CC59A209ADA3FC0BD36E477D2732F], [RemoteAddress:192.168.214.89], [RemoteHost:192.168.214.89] 
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/api/flights?flightType=OW&depAirportCd=HND&arrAirportCd=OKA&boardingClassCd=N&depDate=2026%2F02%2F27&_=1772166971415], [SessionID:9B6CC59A209ADA3FC0BD36E477D2732F], [RemoteAddress:192.168.214.89], [RemoteHost:192.168.214.89] 
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.FlightsApiController#getFlights(FlightSearchCriteriaForm)
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] FlightsApiController.getFlights(FlightSearchCriteriaForm)
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:DEBUG	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:==>  Preparing: SELECT f.departure_date, f.flight_name, f.fare_type_cd, f.vacant_num, f.boarding_class_cd FROM flight f, fare_type ft, flight_master fm, route r WHERE f.fare_type_cd = ft.fare_type_cd AND f.fare_type_cd IN ( ? , ? , ? , ? , ? , ? , ? , ? ) AND f.flight_name = fm.flight_name AND fm.route_no = r.route_no AND r.dep_airport_cd = ? AND r.arr_airport_cd = ? AND f.departure_date = ? AND f.boarding_class_cd = ? AND ? BETWEEN ft.rsrv_available_end_day_num AND ft.rsrv_available_start_day_num ORDER BY ft.display_order ASC, fm.departure_time ASC
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:DEBUG	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:==> Parameters: OW(String), RD1(String), RD7(String), ED(String), LD(String), GD(String), SOW(String), SRD(String), HND(String), OKA(String), 2026-02-27 00:00:00.0(Timestamp), N(String), 0(Integer)
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==    Columns: departure_date, flight_name, fare_type_cd, vacant_num, boarding_class_cd
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT013, OW, 191, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT043, OW, 35, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT073, OW, 96, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT103, OW, 52, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT133, OW, 182, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT163, OW, 61, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT193, OW, 333, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT223, OW, 429, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT253, OW, 157, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT283, OW, 368, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT313, OW, 201, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT343, OW, 289, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT373, OW, 469, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT403, OW, 71, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT433, OW, 377, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT463, OW, 309, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT493, OW, 156, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==        Row: 2026-02-27, NTT523, OW, 498, N
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:DEBUG	logger:j.c.n.a.d.r.f.F.findByVacantSeatSearchCriteria  	message:<==      Total: 18
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] FlightsApiController.getFlights(FlightSearchCriteriaForm)-> view=null, model=null
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] FlightsApiController.getFlights(FlightSearchCriteriaForm)-> 291,367,000 ns
+date:2026-02-27 13:36:11	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:0fb9d2ade6ed40cb9ac1dedcb33f0468	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/api/flights?flightType=OW&depAirportCd=HND&arrAirportCd=OKA&boardingClassCd=N&depDate=2026%2F02%2F27&_=1772166971415], [SessionID:9B6CC59A209ADA3FC0BD36E477D2732F], [RemoteAddress:192.168.214.89], [RemoteHost:192.168.214.89] 
+date:2026-02-27 13:37:57	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6e198b9070574b40ad5ae39e01fc4eee	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.218.177], [RemoteHost:192.168.218.177] 
+date:2026-02-27 13:37:57	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6e198b9070574b40ad5ae39e01fc4eee	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:37:57	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6e198b9070574b40ad5ae39e01fc4eee	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:37:57	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6e198b9070574b40ad5ae39e01fc4eee	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@160eb624[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:37:57 JST 2026
+    outwardDate=Fri Feb 27 13:37:57 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@5e51e579[
+    beginningPeriod=Fri Feb 27 13:37:57 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:37:57	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6e198b9070574b40ad5ae39e01fc4eee	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 2,131,900 ns
+date:2026-02-27 13:37:57	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6e198b9070574b40ad5ae39e01fc4eee	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#4A361E0F75644E52DC5FAFFDA34F421A sessionCreated : org.apache.catalina.session.StandardSessionFacade@2d4bcbc2
+date:2026-02-27 13:37:57	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6e198b9070574b40ad5ae39e01fc4eee	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#4A361E0F75644E52DC5FAFFDA34F421A attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:37:57	thread:http-nio-8083-exec-7	user:anonymousUser	X-Track:6e198b9070574b40ad5ae39e01fc4eee	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.218.177], [RemoteHost:192.168.218.177] 
+date:2026-02-27 13:38:51	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:8b5bc0c9f3494abf85f1a1a4b4b475dc	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.218.177], [RemoteHost:192.168.218.177] 
+date:2026-02-27 13:38:51	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:8b5bc0c9f3494abf85f1a1a4b4b475dc	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:38:51	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:8b5bc0c9f3494abf85f1a1a4b4b475dc	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:38:51	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:8b5bc0c9f3494abf85f1a1a4b4b475dc	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@6d664202[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:38:51 JST 2026
+    outwardDate=Fri Feb 27 13:38:51 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@7448bc3b[
+    beginningPeriod=Fri Feb 27 13:38:51 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:38:51	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:8b5bc0c9f3494abf85f1a1a4b4b475dc	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 1,157,500 ns
+date:2026-02-27 13:38:51	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:8b5bc0c9f3494abf85f1a1a4b4b475dc	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#A2155B3B82DBC11D8FA63BB0070A7C16 sessionCreated : org.apache.catalina.session.StandardSessionFacade@2ec5e5fc
+date:2026-02-27 13:38:51	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:8b5bc0c9f3494abf85f1a1a4b4b475dc	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#A2155B3B82DBC11D8FA63BB0070A7C16 attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:38:51	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:8b5bc0c9f3494abf85f1a1a4b4b475dc	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.218.177], [RemoteHost:192.168.218.177] 
+date:2026-02-27 13:40:53	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#81688893C12D7895FEC693E282575229 sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@2c701b27
+date:2026-02-27 13:40:53	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#81688893C12D7895FEC693E282575229 attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:40:53	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#1F44B6D6A52F1F5305CC899C9F902FF8 sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@149f85a
+date:2026-02-27 13:40:53	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#1F44B6D6A52F1F5305CC899C9F902FF8 attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:41:53	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#FEA516C3F2E0F2A120E3A2CD66801F54 sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@5ad4b4fa
+date:2026-02-27 13:41:53	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#FEA516C3F2E0F2A120E3A2CD66801F54 attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:42:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:1f6819cd4f0d4968811d8e5bd23bc976	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?form], [RemoteAddress:192.168.214.140], [RemoteHost:192.168.214.140] 
+date:2026-02-27 13:42:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:1f6819cd4f0d4968811d8e5bd23bc976	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchForm(Model)
+date:2026-02-27 13:42:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:1f6819cd4f0d4968811d8e5bd23bc976	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchForm(Model)
+date:2026-02-27 13:42:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:1f6819cd4f0d4968811d8e5bd23bc976	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchForm(Model)-> view=B1/flightSearch, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@3aa514aa[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:42:39 JST 2026
+    outwardDate=Fri Feb 27 13:42:39 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@6de617c7[
+    beginningPeriod=Fri Feb 27 13:42:39 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], isInitialSearchUnnecessary=true, org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:42:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:1f6819cd4f0d4968811d8e5bd23bc976	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchForm(Model)-> 1,582,100 ns
+date:2026-02-27 13:42:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:1f6819cd4f0d4968811d8e5bd23bc976	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#C83E65776A1F8DD0FD2EB95A44220A70 sessionCreated : org.apache.catalina.session.StandardSessionFacade@7d640a4d
+date:2026-02-27 13:42:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:1f6819cd4f0d4968811d8e5bd23bc976	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#C83E65776A1F8DD0FD2EB95A44220A70 attributeAdded : org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@2a9a04a
+date:2026-02-27 13:42:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:1f6819cd4f0d4968811d8e5bd23bc976	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#C83E65776A1F8DD0FD2EB95A44220A70 attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:42:39	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:1f6819cd4f0d4968811d8e5bd23bc976	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?form], [RemoteAddress:192.168.214.140], [RemoteHost:192.168.214.140] 
+date:2026-02-27 13:43:24	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:4d9cd6a65ecf47ee99ab85abd8167954	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.218.18], [RemoteHost:192.168.218.18] 
+date:2026-02-27 13:43:24	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:4d9cd6a65ecf47ee99ab85abd8167954	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:43:24	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:4d9cd6a65ecf47ee99ab85abd8167954	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:43:24	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:4d9cd6a65ecf47ee99ab85abd8167954	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@11d4d1c6[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:43:24 JST 2026
+    outwardDate=Fri Feb 27 13:43:24 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@4baf2c26[
+    beginningPeriod=Fri Feb 27 13:43:24 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:43:24	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:4d9cd6a65ecf47ee99ab85abd8167954	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 1,547,400 ns
+date:2026-02-27 13:43:24	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:4d9cd6a65ecf47ee99ab85abd8167954	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#EBBDA3AC452DF31A68F4288CCC4F7889 sessionCreated : org.apache.catalina.session.StandardSessionFacade@27f8c07d
+date:2026-02-27 13:43:24	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:4d9cd6a65ecf47ee99ab85abd8167954	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#EBBDA3AC452DF31A68F4288CCC4F7889 attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:43:24	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:4d9cd6a65ecf47ee99ab85abd8167954	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [RemoteAddress:192.168.218.18], [RemoteHost:192.168.218.18] 
+date:2026-02-27 13:47:26	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:2ca5437bffdc420f9d99fd4f12cc30dd	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?form], [SessionID:C83E65776A1F8DD0FD2EB95A44220A70], [RemoteAddress:192.168.214.140], [RemoteHost:192.168.214.140] 
+date:2026-02-27 13:47:26	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:2ca5437bffdc420f9d99fd4f12cc30dd	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchForm(Model)
+date:2026-02-27 13:47:26	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:2ca5437bffdc420f9d99fd4f12cc30dd	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchForm(Model)
+date:2026-02-27 13:47:26	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:2ca5437bffdc420f9d99fd4f12cc30dd	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchForm(Model)-> view=B1/flightSearch, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@5906fbb8[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:47:26 JST 2026
+    outwardDate=Fri Feb 27 13:47:26 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@3b5221a7[
+    beginningPeriod=Fri Feb 27 13:47:26 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], isInitialSearchUnnecessary=true, org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:47:26	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:2ca5437bffdc420f9d99fd4f12cc30dd	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchForm(Model)-> 571,200 ns
+date:2026-02-27 13:47:26	thread:http-nio-8083-exec-1	user:anonymousUser	X-Track:2ca5437bffdc420f9d99fd4f12cc30dd	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?form], [SessionID:C83E65776A1F8DD0FD2EB95A44220A70], [RemoteAddress:192.168.214.140], [RemoteHost:192.168.214.140] 
+date:2026-02-27 13:47:33	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:ea443583d37e498d9e7d4a093a6f1db4	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?form], [SessionID:C83E65776A1F8DD0FD2EB95A44220A70], [RemoteAddress:192.168.214.140], [RemoteHost:192.168.214.140] 
+date:2026-02-27 13:47:33	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:ea443583d37e498d9e7d4a093a6f1db4	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchForm(Model)
+date:2026-02-27 13:47:33	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:ea443583d37e498d9e7d4a093a6f1db4	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchForm(Model)
+date:2026-02-27 13:47:33	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:ea443583d37e498d9e7d4a093a6f1db4	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchForm(Model)-> view=B1/flightSearch, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@a475d5d[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:47:33 JST 2026
+    outwardDate=Fri Feb 27 13:47:33 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@5c5fac27[
+    beginningPeriod=Fri Feb 27 13:47:33 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], isInitialSearchUnnecessary=true, org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:47:33	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:ea443583d37e498d9e7d4a093a6f1db4	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchForm(Model)-> 1,027,800 ns
+date:2026-02-27 13:47:33	thread:http-nio-8083-exec-9	user:anonymousUser	X-Track:ea443583d37e498d9e7d4a093a6f1db4	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?form], [SessionID:C83E65776A1F8DD0FD2EB95A44220A70], [RemoteAddress:192.168.214.140], [RemoteHost:192.168.214.140] 
+date:2026-02-27 13:47:39	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:31d063eaba55431ba29f1a74717e38b9	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/], [SessionID:C83E65776A1F8DD0FD2EB95A44220A70], [RemoteAddress:192.168.214.140], [RemoteHost:192.168.214.140] 
+date:2026-02-27 13:47:39	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:31d063eaba55431ba29f1a74717e38b9	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.a0.IndexController#homePage()
+date:2026-02-27 13:47:39	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:31d063eaba55431ba29f1a74717e38b9	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] IndexController.homePage()
+date:2026-02-27 13:47:39	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:31d063eaba55431ba29f1a74717e38b9	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] IndexController.homePage()-> view=redirect:/ticket/search?topForm, model={}
+date:2026-02-27 13:47:39	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:31d063eaba55431ba29f1a74717e38b9	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] IndexController.homePage()-> 156,400 ns
+date:2026-02-27 13:47:39	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:31d063eaba55431ba29f1a74717e38b9	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/], [SessionID:C83E65776A1F8DD0FD2EB95A44220A70], [RemoteAddress:192.168.214.140], [RemoteHost:192.168.214.140] 
+date:2026-02-27 13:47:39	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:d6afeb2dd9fc4c069bcb269294aa066d	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [SessionID:C83E65776A1F8DD0FD2EB95A44220A70], [RemoteAddress:192.168.214.140], [RemoteHost:192.168.214.140] 
+date:2026-02-27 13:47:39	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:d6afeb2dd9fc4c069bcb269294aa066d	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 13:47:39	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:d6afeb2dd9fc4c069bcb269294aa066d	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 13:47:39	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:d6afeb2dd9fc4c069bcb269294aa066d	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@f6004d4[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:47:39 JST 2026
+    outwardDate=Fri Feb 27 13:47:39 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@3fde2fa8[
+    beginningPeriod=Fri Feb 27 13:47:39 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:47:39	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:d6afeb2dd9fc4c069bcb269294aa066d	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 1,014,100 ns
+date:2026-02-27 13:47:39	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:d6afeb2dd9fc4c069bcb269294aa066d	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [SessionID:C83E65776A1F8DD0FD2EB95A44220A70], [RemoteAddress:192.168.214.140], [RemoteHost:192.168.214.140] 
+date:2026-02-27 13:48:08	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:e2f75fd462c04cc3b0af54de6eb3b1f9	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?form], [RemoteAddress:192.168.214.140], [RemoteHost:192.168.214.140] 
+date:2026-02-27 13:48:08	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:e2f75fd462c04cc3b0af54de6eb3b1f9	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchForm(Model)
+date:2026-02-27 13:48:08	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:e2f75fd462c04cc3b0af54de6eb3b1f9	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchForm(Model)
+date:2026-02-27 13:48:08	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:e2f75fd462c04cc3b0af54de6eb3b1f9	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchForm(Model)-> view=B1/flightSearch, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@737b5d36[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 13:48:08 JST 2026
+    outwardDate=Fri Feb 27 13:48:08 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@fb46941[
+    beginningPeriod=Fri Feb 27 13:48:08 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], isInitialSearchUnnecessary=true, org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 13:48:08	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:e2f75fd462c04cc3b0af54de6eb3b1f9	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchForm(Model)-> 1,101,200 ns
+date:2026-02-27 13:48:08	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:e2f75fd462c04cc3b0af54de6eb3b1f9	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#A0E742EC07E7068D374E286257551902 sessionCreated : org.apache.catalina.session.StandardSessionFacade@da347db
+date:2026-02-27 13:48:08	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:e2f75fd462c04cc3b0af54de6eb3b1f9	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#A0E742EC07E7068D374E286257551902 attributeAdded : org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@50960cb4
+date:2026-02-27 13:48:08	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:e2f75fd462c04cc3b0af54de6eb3b1f9	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#A0E742EC07E7068D374E286257551902 attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 13:48:08	thread:http-nio-8083-exec-4	user:anonymousUser	X-Track:e2f75fd462c04cc3b0af54de6eb3b1f9	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?form], [RemoteAddress:192.168.214.140], [RemoteHost:192.168.214.140] 
+date:2026-02-27 13:58:54	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#6202D423C78B7D4C3D8B5067BF61915F sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@750c3829
+date:2026-02-27 13:58:54	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#6202D423C78B7D4C3D8B5067BF61915F attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 14:00:54	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#B9244B1AFBF4E3CB9F41021EA2C43621 sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@3fde4247
+date:2026-02-27 14:00:54	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#B9244B1AFBF4E3CB9F41021EA2C43621 attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 14:04:55	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#82E7082BAC230C1CCB7D03ACAF103555 sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@7bee831b
+date:2026-02-27 14:04:55	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#82E7082BAC230C1CCB7D03ACAF103555 attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 14:05:55	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#FAB3808ABA1C2C70D542EF015BCB9D3D sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@52ab9255
+date:2026-02-27 14:05:55	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#FAB3808ABA1C2C70D542EF015BCB9D3D attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 14:05:55	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#FAB3808ABA1C2C70D542EF015BCB9D3D attributeRemoved : org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@1f1d678e
+date:2026-02-27 14:06:55	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#9B6CC59A209ADA3FC0BD36E477D2732F sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@1181fa3e
+date:2026-02-27 14:06:55	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#9B6CC59A209ADA3FC0BD36E477D2732F attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 14:06:55	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#9B6CC59A209ADA3FC0BD36E477D2732F attributeRemoved : org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@3761a4b
+date:2026-02-27 14:08:55	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#4A361E0F75644E52DC5FAFFDA34F421A sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@2d4bcbc2
+date:2026-02-27 14:08:55	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#4A361E0F75644E52DC5FAFFDA34F421A attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 14:08:55	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#A2155B3B82DBC11D8FA63BB0070A7C16 sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@2ec5e5fc
+date:2026-02-27 14:08:55	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#A2155B3B82DBC11D8FA63BB0070A7C16 attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 14:13:55	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#EBBDA3AC452DF31A68F4288CCC4F7889 sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@27f8c07d
+date:2026-02-27 14:13:55	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#EBBDA3AC452DF31A68F4288CCC4F7889 attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 14:17:56	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#C83E65776A1F8DD0FD2EB95A44220A70 sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@7d640a4d
+date:2026-02-27 14:17:56	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#C83E65776A1F8DD0FD2EB95A44220A70 attributeRemoved : org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@2a9a04a
+date:2026-02-27 14:17:56	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#C83E65776A1F8DD0FD2EB95A44220A70 attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 14:18:56	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#A0E742EC07E7068D374E286257551902 sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@da347db
+date:2026-02-27 14:18:56	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#A0E742EC07E7068D374E286257551902 attributeRemoved : org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@50960cb4
+date:2026-02-27 14:18:56	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#A0E742EC07E7068D374E286257551902 attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 16:27:05	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:cd8e81f2edc4404494ab48fccd325636	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/auth/login?form], [RemoteAddress:192.168.214.132], [RemoteHost:192.168.214.132] 
+date:2026-02-27 16:27:05	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:cd8e81f2edc4404494ab48fccd325636	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.a1.AuthLoginController#loginForm()
+date:2026-02-27 16:27:05	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:cd8e81f2edc4404494ab48fccd325636	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] AuthLoginController.loginForm()
+date:2026-02-27 16:27:05	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:cd8e81f2edc4404494ab48fccd325636	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] AuthLoginController.loginForm()-> view=A1/loginForm, model={}
+date:2026-02-27 16:27:05	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:cd8e81f2edc4404494ab48fccd325636	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] AuthLoginController.loginForm()-> 417,400 ns
+date:2026-02-27 16:27:05	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:cd8e81f2edc4404494ab48fccd325636	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#454938B223FF3EB3420F8950E3D761BE sessionCreated : org.apache.catalina.session.StandardSessionFacade@6b62c792
+date:2026-02-27 16:27:05	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:cd8e81f2edc4404494ab48fccd325636	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#454938B223FF3EB3420F8950E3D761BE attributeAdded : org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@3ac59ec7
+date:2026-02-27 16:27:05	thread:http-nio-8083-exec-6	user:anonymousUser	X-Track:cd8e81f2edc4404494ab48fccd325636	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/auth/login?form], [RemoteAddress:192.168.214.132], [RemoteHost:192.168.214.132] 
+date:2026-02-27 16:27:14	thread:http-nio-8083-exec-3	user:	X-Track:f55c08b883ed41cea875ba69ff0c2c6f	level:DEBUG	logger:j.c.n.a.d.r.m.MemberRepository.findOneForLogin  	message:==>  Preparing: SELECT m.customer_no, m.kanji_family_name, m.kanji_given_name, m_l.password, m_l.last_password, m_l.login_date_time, m_l.login_flg FROM member m, member_login m_l WHERE m.customer_no = ? AND m.customer_no = m_l.customer_no
+date:2026-02-27 16:27:14	thread:http-nio-8083-exec-3	user:	X-Track:f55c08b883ed41cea875ba69ff0c2c6f	level:DEBUG	logger:j.c.n.a.d.r.m.MemberRepository.findOneForLogin  	message:==> Parameters: 0000000014(String)
+date:2026-02-27 16:27:14	thread:http-nio-8083-exec-3	user:	X-Track:f55c08b883ed41cea875ba69ff0c2c6f	level:TRACE	logger:j.c.n.a.d.r.m.MemberRepository.findOneForLogin  	message:<==    Columns: customer_no, kanji_family_name, kanji_given_name, password, last_password, login_date_time, login_flg
+date:2026-02-27 16:27:14	thread:http-nio-8083-exec-3	user:	X-Track:f55c08b883ed41cea875ba69ff0c2c6f	level:TRACE	logger:j.c.n.a.d.r.m.MemberRepository.findOneForLogin  	message:<==        Row: 0000000014, ミカ, ハッキネン, {pbkdf2}fef51599847b534c61b9468aaf5c1f268cc76e73aad38fe18574e6ed92aca83da4303d4193adab70, {pbkdf2}fef51599847b534c61b9468aaf5c1f268cc76e73aad38fe18574e6ed92aca83da4303d4193adab70, 2026-02-27 16:26:54.989, t
+date:2026-02-27 16:27:14	thread:http-nio-8083-exec-3	user:	X-Track:f55c08b883ed41cea875ba69ff0c2c6f	level:DEBUG	logger:j.c.n.a.d.r.m.MemberRepository.findOneForLogin  	message:<==      Total: 1
+date:2026-02-27 16:27:14	thread:http-nio-8083-exec-3	user:	X-Track:f55c08b883ed41cea875ba69ff0c2c6f	level:DEBUG	logger:j.c.n.a.d.r.m.M.updateToLoginStatus             	message:==>  Preparing: UPDATE member_login SET login_date_time = ?, login_flg = ? WHERE customer_no = ?
+date:2026-02-27 16:27:14	thread:http-nio-8083-exec-3	user:	X-Track:f55c08b883ed41cea875ba69ff0c2c6f	level:DEBUG	logger:j.c.n.a.d.r.m.M.updateToLoginStatus             	message:==> Parameters: 2026-02-27 16:27:14.972(Timestamp), true(Boolean), 0000000014(String)
+date:2026-02-27 16:27:14	thread:http-nio-8083-exec-3	user:	X-Track:f55c08b883ed41cea875ba69ff0c2c6f	level:DEBUG	logger:j.c.n.a.d.r.m.M.updateToLoginStatus             	message:<==    Updates: 1
+date:2026-02-27 16:27:14	thread:http-nio-8083-exec-3	user:	X-Track:f55c08b883ed41cea875ba69ff0c2c6f	level:INFO 	logger:j.c.n.a.domain.service.a1.AuthLoginServiceImpl  	message:[i.ar.a1.L0001] 会員番号[0000000014] ログイン成功
+date:2026-02-27 16:27:14	thread:http-nio-8083-exec-3	user:	X-Track:f55c08b883ed41cea875ba69ff0c2c6f	level:DEBUG	logger:j.c.n.a.a.c.s.AtrsUsernamePasswordAuthenticationFilter	message:Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=jp.co.ntt.atrs.domain.service.a1.AtrsUserDetails@581913a4, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=192.168.214.132, SessionId=454938B223FF3EB3420F8950E3D761BE], Granted Authorities=[ROLE_MEMBER]]
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-3	user:	X-Track:f55c08b883ed41cea875ba69ff0c2c6f	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#454938B223FF3EB3420F8950E3D761BE attributeAdded : SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=jp.co.ntt.atrs.domain.service.a1.AtrsUserDetails@581913a4, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=192.168.214.132, SessionId=454938B223FF3EB3420F8950E3D761BE], Granted Authorities=[ROLE_MEMBER]]]
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-10	user:0000000014	X-Track:6f11337924c949c7afc9d8aad0eb6ca7	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/], [SessionID:454938B223FF3EB3420F8950E3D761BE], [RemoteAddress:192.168.214.132], [RemoteHost:192.168.214.132] 
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-10	user:0000000014	X-Track:6f11337924c949c7afc9d8aad0eb6ca7	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.a0.IndexController#homePage()
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-10	user:0000000014	X-Track:6f11337924c949c7afc9d8aad0eb6ca7	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] IndexController.homePage()
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-10	user:0000000014	X-Track:6f11337924c949c7afc9d8aad0eb6ca7	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] IndexController.homePage()-> view=redirect:/ticket/search?topForm, model={}
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-10	user:0000000014	X-Track:6f11337924c949c7afc9d8aad0eb6ca7	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] IndexController.homePage()-> 157,900 ns
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-10	user:0000000014	X-Track:6f11337924c949c7afc9d8aad0eb6ca7	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/], [SessionID:454938B223FF3EB3420F8950E3D761BE], [RemoteAddress:192.168.214.132], [RemoteHost:192.168.214.132] 
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-5	user:0000000014	X-Track:13d5595ac26c4aa19cdd4e59ff06a978	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [SessionID:454938B223FF3EB3420F8950E3D761BE], [RemoteAddress:192.168.214.132], [RemoteHost:192.168.214.132] 
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-5	user:0000000014	X-Track:13d5595ac26c4aa19cdd4e59ff06a978	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchTopForm(Model)
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-5	user:0000000014	X-Track:13d5595ac26c4aa19cdd4e59ff06a978	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchTopForm(Model)
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-5	user:0000000014	X-Track:13d5595ac26c4aa19cdd4e59ff06a978	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchTopForm(Model)-> view=A0/top, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@fb21693[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Fri Feb 27 16:27:20 JST 2026
+    outwardDate=Fri Feb 27 16:27:20 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@28987ac1[
+    beginningPeriod=Fri Feb 27 16:27:20 JST 2026
+    endingPeriod=Thu May 28 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-5	user:0000000014	X-Track:13d5595ac26c4aa19cdd4e59ff06a978	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchTopForm(Model)-> 430,400 ns
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-5	user:0000000014	X-Track:13d5595ac26c4aa19cdd4e59ff06a978	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#454938B223FF3EB3420F8950E3D761BE attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 16:27:20	thread:http-nio-8083-exec-5	user:0000000014	X-Track:13d5595ac26c4aa19cdd4e59ff06a978	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?topForm], [SessionID:454938B223FF3EB3420F8950E3D761BE], [RemoteAddress:192.168.214.132], [RemoteHost:192.168.214.132] 
+date:2026-02-27 16:58:10	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#454938B223FF3EB3420F8950E3D761BE sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@6b62c792
+date:2026-02-27 16:58:10	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#454938B223FF3EB3420F8950E3D761BE attributeRemoved : org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@3ac59ec7
+date:2026-02-27 16:58:10	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#454938B223FF3EB3420F8950E3D761BE attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-02-27 16:58:10	thread:Catalina-utility-2	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#454938B223FF3EB3420F8950E3D761BE attributeRemoved : SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=jp.co.ntt.atrs.domain.service.a1.AtrsUserDetails@581913a4, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=192.168.214.132, SessionId=454938B223FF3EB3420F8950E3D761BE], Granted Authorities=[ROLE_MEMBER]]]

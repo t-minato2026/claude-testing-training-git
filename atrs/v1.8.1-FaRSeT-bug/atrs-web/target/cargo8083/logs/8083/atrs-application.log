@@ -1,0 +1,23 @@
+date:2026-03-04 08:47:23	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:151d038639aa4e74b57457ad826215e9	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS START [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?form], [RemoteAddress:192.168.214.121], [RemoteHost:192.168.214.121] 
+date:2026-03-04 08:47:23	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:151d038639aa4e74b57457ad826215e9	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to jp.co.ntt.atrs.app.b1.TicketSearchController#searchForm(Model)
+date:2026-03-04 08:47:23	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:151d038639aa4e74b57457ad826215e9	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] TicketSearchController.searchForm(Model)
+date:2026-03-04 08:47:23	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:151d038639aa4e74b57457ad826215e9	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] TicketSearchController.searchForm(Model)-> view=B1/flightSearch, model={ticketSearchForm=jp.co.ntt.atrs.app.b1.TicketSearchForm@78fa7e05[
+    arrAirportCd=HND
+    boardingClassCd=N
+    depAirportCd=HND
+    flightType=OW
+    homewardDate=Wed Mar 04 08:47:23 JST 2026
+    outwardDate=Wed Mar 04 08:47:23 JST 2026
+  ], flightSearchOutputDto=jp.co.ntt.atrs.app.b1.FlightSearchOutputDto@26c369f0[
+    beginningPeriod=Wed Mar 04 08:47:23 JST 2026
+    endingPeriod=Tue Jun 02 00:00:00 JST 2026
+    reserveIntervalTime=120
+  ], isInitialSearchUnnecessary=true, org.springframework.validation.BindingResult.ticketSearchForm=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.flightSearchOutputDto=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+date:2026-03-04 08:47:23	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:151d038639aa4e74b57457ad826215e9	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] TicketSearchController.searchForm(Model)-> 1,297,400 ns
+date:2026-03-04 08:47:24	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:151d038639aa4e74b57457ad826215e9	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#0B4DAF1F929C9434E401C4EF10706569 sessionCreated : org.apache.catalina.session.StandardSessionFacade@306f22d2
+date:2026-03-04 08:47:24	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:151d038639aa4e74b57457ad826215e9	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#0B4DAF1F929C9434E401C4EF10706569 attributeAdded : org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@282b39de
+date:2026-03-04 08:47:24	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:151d038639aa4e74b57457ad826215e9	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#0B4DAF1F929C9434E401C4EF10706569 attributeAdded : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
+date:2026-03-04 08:47:24	thread:http-nio-8083-exec-2	user:anonymousUser	X-Track:151d038639aa4e74b57457ad826215e9	level:INFO 	logger:j.co.ntt.atrs.app.common.logging.AccessLogFilter	message:ACCESS FINISH [RequestURL:http://192.168.218.187:8083/atrs/ticket/search?form], [RemoteAddress:192.168.214.121], [RemoteHost:192.168.214.121] 
+date:2026-03-04 09:17:30	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#0B4DAF1F929C9434E401C4EF10706569 sessionDestroyed : org.apache.catalina.session.StandardSessionFacade@306f22d2
+date:2026-03-04 09:17:30	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#0B4DAF1F929C9434E401C4EF10706569 attributeRemoved : org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@282b39de
+date:2026-03-04 09:17:30	thread:Catalina-utility-1	user:	X-Track:	level:DEBUG	logger:o.t.g.w.logging.HttpSessionEventLoggingListener 	message:SESSIONID#0B4DAF1F929C9434E401C4EF10706569 attributeRemoved : javax.servlet.jsp.jstl.fmt.request.charset=UTF-8
